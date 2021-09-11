@@ -16,11 +16,15 @@ module.exports = {
                 onsubmit: function(e) {
                     e.preventDefault()
                     User.create(UserData)
-                    .then(
-                    function(){UserData.id=0;
-                    UserData.firstName="";
-                    UserData.lastName="";
-                    })}
+                     UserData.firstName="";
+                     UserData.lastName="";
+                   
+                    // .then(
+                    // function(){UserData.id=0;
+                    // UserData.firstName="";
+                    // UserData.lastName="";
+                    // })
+                }
             }, 
             [
             m("input.input[type=text][placeholder=First name]", {
